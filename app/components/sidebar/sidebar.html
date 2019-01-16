@@ -2,8 +2,70 @@
     <ul ng-repeat="club in clubs">
       <li>
         <a href="#!/sidebar" class="btn btn-info" 
-        ng-click="selectClub(club)">{{ club.title }}</a>
+        ng-click="selectClub(club)">{{ club.clubName }}</a>
       </li>
     </ul>
 </aside>
+
+<div class="container">
+	<div class="row">
+		<div class="col col-lg-12">
+			<h2>{{ clubInfo.clubName }}</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col col-lg-2">
+			<img src="{{  clubInfo.logo  }}" alt="{{ clubInfo.clubName }}">
+		</div>
+
+		<div class="col col-lg-4">
+			<table class="table">
+				<tr>
+					<td class="title">Founded: </td>
+					<td class="text">{{ clubInfo.founded }}</td>
+					</tr>
+					<tr>
+						<td class="title">Stadium: </td>
+						<td class="text">{{ clubInfo.stadium }}</td>
+					</tr> 
+					<tr>
+						<td class="title">Capacity: </td>
+						<td class="text">{{ clubInfo.capacity }}</td>
+					</tr>     
+					<tr>
+						<td class="title">Day of Birth:</td>
+						<td class="text"></td>
+					</tr>
+			</table>		
+		</div>
+	</div>
+
+	<div class="row">
+			<div class="col col-lg-3" ng-repeat="player in clubInfo.players">
+				<div>
+					<img src="{{  player.photo  }}" alt="{{ clubInfo.clubName }}">
+				</div>
+
+				<table class="table">
+					<tr>
+						<td class="text"><strong>{{ player.name }}</strong></td>
+					</tr>
+						<tr>
+							<td class="title">Stadium: </td>
+							<td class="text">{{ clubInfo.stadium }}</td>
+						</tr> 
+						<tr>
+							<td class="title">Capacity: </td>
+							<td class="text">{{ clubInfo.capacity }}</td>
+						</tr>     
+						<tr>
+							<td class="title">Day of Birth:</td>
+							<td class="text"></td>
+						</tr>
+				</table>		
+			</div>
+	</div>
+</div>
+
+<div my-customer></div>
 

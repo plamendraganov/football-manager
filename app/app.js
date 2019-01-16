@@ -8,7 +8,7 @@ angular.module('myApp', [
   'myApp.version',
   'myApp.sidebar',
   'requestDataService',
-  'showPlayersService'
+  'showPlayersService',
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
