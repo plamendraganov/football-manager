@@ -1,0 +1,23 @@
+.sidebar {
+    display: inline-block;
+    width: 20%;
+}
+
+.sidebar ul {
+    padding: 0px;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.sidebar ul li {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    list-style-type: none;
+}
+
+.sidebar ul li a {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
