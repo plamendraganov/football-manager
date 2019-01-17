@@ -1,0 +1,64 @@
+<div class="container">
+        <div class="row">
+            <div class="col col-lg-12">
+                <h2>{{ myClub.clubName }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-lg-2">
+                <img src="{{  myClub.logo  }}" alt="{{ myClub.clubName }}">
+            </div>
+    
+            <div class="col col-lg-4">
+                <table class="table">
+                    <tr>
+                        <td class="title">Founded: </td>
+                        <td class="text">{{ myClub.founded }}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Country:</td>
+                        <td class="text">{{ myClub.country }}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Stadium: </td>
+                        <td class="text">{{ myClub.stadium }}</td>
+                    </tr> 
+                    <tr>
+                        <td class="title">Capacity: </td>
+                        <td class="text">{{ myClub.capacity }}</td>
+                    </tr>     
+                </table>		
+            </div>
+        </div>
+    
+        <div class="row">
+                <div class="col col-lg-3" ng-repeat="player in myClub.players">
+                    <div class="row">
+                        <div class="col col-lg-12">
+                            <img src="{{  player.photo  }}" alt="{{ player.name }}" ng-click="showPlayerDetails(player)">
+                        </div>
+                    </div>
+                    <table class="table table-hover">
+                        <tr>
+                            <td>Name:</td>
+                            <td class="text"><strong>{{ player.name | shortenFirstName }}</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="title">Age: </td>
+                            <td class="text">{{ player.age }}</td>
+                        </tr> 
+                        <tr>
+                            <td class="title">Height: </td>
+                            <td class="text">{{ player.height }}</td>
+                        </tr>     
+                        <tr>
+                            <td class="title">Position:</td>
+                            <td class="text">{{ player.position }}</td>
+                        </tr>
+                    </table>	
+                </div>
+        </div>
+    
+        <button class="btn btn-success" ng-click="takeClub(myClub)">TAKE THIS CLUB</button>
+        
+    </div>

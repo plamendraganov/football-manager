@@ -12,7 +12,8 @@ angular.module('myApp.sidebar', ['ngRoute'])
 .controller('SidebarController', [
     '$scope',
     'getClubDataService',
-    function($scope, getClubDataService) {
+    'chooseTeamService',
+    function($scope, getClubDataService, chooseTeamService) {
         $scope.clubs = [];
 
         // $scope.clubs = ['Real', 'Milan', 'Chelsea'];
@@ -21,6 +22,8 @@ angular.module('myApp.sidebar', ['ngRoute'])
 
         $scope.isClubSelected = false;
 
+        $scope.myTeamSelected = [];
+
         getClubDataService.getRepos()
             .then(function(data){
                 $scope.clubs = data;
@@ -28,8 +31,18 @@ angular.module('myApp.sidebar', ['ngRoute'])
 
         $scope.selectClub = function(club) {
             $scope.clubInfo = club;
-            console.log($scope.clubInfo);
+
             $scope.isClubSelected = true;
+        }
+
+        $scope.addPlayer = function(player) {
+            chooseTeamService.addToMyTeam(player);
+            var test = chooseTeamService.getMyTeam();
+            console.log(test);
+        }
+
+        $scope.takeClub = function(club) {
+            chooseTeamService.setMyTeam(club);
         }
     }
 ])
