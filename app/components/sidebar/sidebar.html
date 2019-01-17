@@ -50,7 +50,7 @@
 				<table class="table table-hover">
 					<tr>
 						<td>Name:</td>
-						<td class="text"><strong>{{ player.name }}</strong></td>
+						<td class="text"><strong>{{ player.name | shortenFirstName }}</strong></td>
 					</tr>
 					<tr>
 						<td class="title">Age: </td>
@@ -68,6 +68,3 @@
 			</div>
 	</div>
 </div>
-
-<div my-customer></div>
-

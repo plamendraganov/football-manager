@@ -34,9 +34,18 @@ angular.module('myApp.sidebar', ['ngRoute'])
     }
 ])
 
-// .directive('myCustomer', function() {
-//     return {
-//       template: ''
-//     };
-//   });
+    .filter('shortenFirstName', function() {
+        var shortName = '';
 
+        return function(inputVal) {
+            if (inputVal.length > 18) {
+                let separateNames = inputVal.split(' ');
+                let firstLetter = separateNames[0].charAt(0);
+                let arrLeft = separateNames.slice(1);
+                shortName = firstLetter + '. ' + arrLeft.join(' ');
+                return shortName;
+            } 
+
+            return inputVal;
+        }
+    }) ;
