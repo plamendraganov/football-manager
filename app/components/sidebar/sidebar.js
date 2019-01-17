@@ -19,6 +19,8 @@ angular.module('myApp.sidebar', ['ngRoute'])
 
         $scope.clubInfo = [];
 
+        $scope.isClubSelected = false;
+
         getClubDataService.getRepos()
             .then(function(data){
                 $scope.clubs = data;
@@ -27,6 +29,7 @@ angular.module('myApp.sidebar', ['ngRoute'])
         $scope.selectClub = function(club) {
             $scope.clubInfo = club;
             console.log($scope.clubInfo);
+            $scope.isClubSelected = true;
         }
     }
 ])

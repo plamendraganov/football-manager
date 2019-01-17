@@ -8,7 +8,7 @@ angular.module('requestDataService', [])
             function getRepos() {
                 var deferred = $q.defer();
 
-                $http.get('https://api.myjson.com/bins/149sh8')
+                $http.get('https://api.myjson.com/bins/7y1hs')
                     .then(function(result) {
                         deferred.resolve(result.data);
                     }, function(err) {

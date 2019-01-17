@@ -7,7 +7,7 @@
     </ul>
 </aside>
 
-<div class="container">
+<div class="container" ng-if="isClubSelected">
 	<div class="row">
 		<div class="col col-lg-12">
 			<h2>{{ clubInfo.clubName }}</h2>
@@ -23,46 +23,48 @@
 				<tr>
 					<td class="title">Founded: </td>
 					<td class="text">{{ clubInfo.founded }}</td>
-					</tr>
-					<tr>
-						<td class="title">Stadium: </td>
-						<td class="text">{{ clubInfo.stadium }}</td>
-					</tr> 
-					<tr>
-						<td class="title">Capacity: </td>
-						<td class="text">{{ clubInfo.capacity }}</td>
-					</tr>     
-					<tr>
-						<td class="title">Day of Birth:</td>
-						<td class="text"></td>
-					</tr>
+				</tr>
+				<tr>
+					<td class="title">Country:</td>
+					<td class="text">{{ clubInfo.country }}</td>
+				</tr>
+				<tr>
+					<td class="title">Stadium: </td>
+					<td class="text">{{ clubInfo.stadium }}</td>
+				</tr> 
+				<tr>
+					<td class="title">Capacity: </td>
+					<td class="text">{{ clubInfo.capacity }}</td>
+				</tr>     
 			</table>		
 		</div>
 	</div>
 
 	<div class="row">
 			<div class="col col-lg-3" ng-repeat="player in clubInfo.players">
-				<div>
-					<img src="{{  player.photo  }}" alt="{{ clubInfo.clubName }}">
+				<div class="row">
+					<div class="col col-lg-12">
+						<img src="{{  player.photo  }}" alt="{{ player.name }}">
+					</div>
 				</div>
-
-				<table class="table">
+				<table class="table table-hover">
 					<tr>
+						<td>Name:</td>
 						<td class="text"><strong>{{ player.name }}</strong></td>
 					</tr>
-						<tr>
-							<td class="title">Stadium: </td>
-							<td class="text">{{ clubInfo.stadium }}</td>
-						</tr> 
-						<tr>
-							<td class="title">Capacity: </td>
-							<td class="text">{{ clubInfo.capacity }}</td>
-						</tr>     
-						<tr>
-							<td class="title">Day of Birth:</td>
-							<td class="text"></td>
-						</tr>
-				</table>		
+					<tr>
+						<td class="title">Age: </td>
+						<td class="text">{{ player.age }}</td>
+					</tr> 
+					<tr>
+						<td class="title">Height: </td>
+						<td class="text">{{ player.height }}</td>
+					</tr>     
+					<tr>
+						<td class="title">Position:</td>
+						<td class="text">{{ player.position }}</td>
+					</tr>
+				</table>	
 			</div>
 	</div>
 </div>
