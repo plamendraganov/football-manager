@@ -4,134 +4,156 @@
         "country": "Spain",
         "logo": "https://i.ibb.co/VC1vx5P/barcelona.png",
         "founded": 1899,
+        "budget": 150000000,
         "stadium": "Camp Nou",
         "capacity": 99354,
+        "attendance": "76000",
+        "ticketPrice": 130,
+        "stadiumPic": "https://i.ibb.co/YPRgHtk/camp-nou.jpg",
         "players": [
             {
                 "name": "Andre ter Stegen",
                 "photo": "https://i.ibb.co/ynG8zrp/ter-stegen.jpg",
                 "age": 26,
                 "height": 187,
-                "position": "Goalkeeper"
+                "position": "Goalkeeper",
+                "price": 80000000
             },
             {
                 "name": "Jasper Cillessen",
                 "photo": "https://i.ibb.co/31nY86t/jasper-cillessen.jpg",
                 "age": 29,
                 "height": 185,
-                "position": "Goalkeeper"
+                "position": "Goalkeeper",
+                "price": 18000000
             },
             {
                 "name": "Lazar Carevic",
                 "photo": "https://i.ibb.co/HGQYJBK/lazar-carevic.jpg",
                 "age": 19,
                 "height": 193,
-                "position": "Goalkeeper"
+                "position": "Goalkeeper",
+                "price": 1000000
             },
             {
                 "name": "Samuel Umtiti",
                 "photo": "https://i.ibb.co/XYjHWsf/samuel-umtiti.jpg",
                 "age": 25,
                 "height": 182,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 70000000
             },
             {
                 "name": "Gerard Pique",
                 "photo": "https://i.ibb.co/ZGw23sM/gerard-pique.jpg",
                 "age": 31,
                 "height": 194,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 40000000
             },
             {
                 "name": "Clement Lenglet",
                 "photo": "https://i.ibb.co/2k42Skt/clement-lenglet.jpg",
                 "age": 23,
                 "height": 186,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 40000000
             },
             {
                 "name": "Jeison Murillo",
                 "photo": "https://i.ibb.co/hZwbRdR/jeison-murillo.jpg",
                 "age": 26,
                 "height": 182,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 15000000
             },
             {
                 "name": "Thomas Vermaelen",
                 "photo": "https://i.ibb.co/WHK5nYn/thomas-vermaelen.jpg",
                 "age": 33,
                 "height": 183,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 3000000
             },
             {
                 "name": "Jordi Alba",
                 "photo": "https://i.ibb.co/YdJpx3m/jordi-alba.jpg",
                 "age": 29,
                 "height": 170,
-                "position": "Left-Back"
+                "position": "Left-Back",
+                "price": 70000000
             },
             {
                 "name": "Sergi Roberto",
                 "photo": "https://i.ibb.co/BP8R74Z/sergi-roberto.jpg",
                 "age": 26,
                 "height": 178,
-                "position": "Right-Back"
+                "position": "Right-Back",
+                "price": 55000000
             },
             {
                 "name": "Nelson Semedo",
                 "photo": "https://i.ibb.co/YkZLLnF/nelson-semedo.jpg",
                 "age": 25,
                 "height": 177,
-                "position": "Right-Back"
+                "position": "Right-Back",
+                "price": 35000000
             },
             {
                 "name": "Sergio Busquets",
                 "photo": "https://i.ibb.co/8B2kVcg/sergio-busquets.jpg",
                 "age": 30,
                 "height": 189,
-                "position": "Defensive Midfield"
+                "position": "Defensive Midfield",
+                "price": 75000000
             },
             {
                 "name": "Sergi Samper",
                 "photo": "https://i.ibb.co/4jwSwdB/sergi-samper.jpg",
                 "age": 23,
                 "height": 181,
-                "position": "Defensive Midfield"
+                "position": "Defensive Midfield",
+                "price": 2000000
             },
             {
                 "name": "Ivan Rakitic",
                 "photo": "https://i.ibb.co/MVTVWSc/ivan-rakitic.jpg",
                 "age": 30,
                 "height": 184,
-                "position": "Central Midfield"
+                "position": "Central Midfield",
+                "price": 65000000
             },
             {
                 "name": "Arthur",
                 "photo": "https://i.ibb.co/zGW7V1y/arthur.jpg",
                 "age": 22,
                 "height": 172,
-                "position": "Central Midfield"
+                "position": "Central Midfield",
+                "price": 50000000
             },
             {
                 "name": "Arturo Vidal",
                 "photo": "https://i.ibb.co/B3gmFKR/arturo-vidal.jpg",
                 "age": 31,
                 "height": 180,
-                "position": "Central Midfield"
+                "position": "Central Midfield",
+                "price": 20000000
             },
             {
                 "name": "Rafinha",
                 "photo": "https://i.ibb.co/kqmqqh6/rafinha.jpg",
                 "age": 25,
                 "height": 174,
-                "position": "Central Midfield"
+                "position": "Central Midfield",
+                "price": 18000000
             },
             {
                 "name": "Denis Suarez",
                 "photo": "https://i.ibb.co/M78bnDr/denis-suarez.jpg",
                 "age": 25,
                 "height": 176,
-                "position": "Central Midfield"
+                "position": "Central Midfield",
+                "price": 12000000
             },
             {
                 "name": "Carles Alena",
@@ -139,41 +161,48 @@
                 "age": 21,
                 "height": 180,
                 "position": "Central Midfield"
+                ,
+                "price": 15000000
             },
             {
                 "name": "Philippe Coutinho",
                 "photo": "https://i.ibb.co/cN9fpfj/philippe-coutinho.jpg",
                 "age": 26,
                 "height": 172,
-                "position": "Attacking Midfield"
+                "position": "Attacking Midfield",
+                "price": 140000000
             },
             {
                 "name": "Ousmane Dembele",
                 "photo": "https://i.ibb.co/G2K3sTR/ousmane-dembele.jpg",
                 "age": 21,
                 "height": 178,
-                "position": "Left Winger"
+                "position": "Left Winger",
+                "price": 80000000
             },
             {
                 "name": "Lionel Messi",
                 "photo": "https://i.ibb.co/TmpHKQs/lionel-messi.jpg",
                 "age": 31,
                 "height": 170,
-                "position": "Right Winger"
+                "position": "Right Winger",
+                "price": 160000000
             },
             {
                 "name": "Malcom",
                 "photo": "https://i.ibb.co/sP8bK27/malcom.jpg",
                 "age": 21,
                 "height": 171,
-                "position": "Right Winger"
+                "position": "Right Winger",
+                "price": 40000000
             },
             {
                 "name": "Luis Suarez",
                 "photo": "https://i.ibb.co/02HDbZh/luis-suarez.jpg",
                 "age": 31,
                 "height": 182,
-                "position": "Centre Forward"
+                "position": "Centre Forward",
+                "price": 60000000
             }
         ]
     },
@@ -182,176 +211,204 @@
         "country": "Italy",
         "logo": "https://i.ibb.co/R4FjpT5/juventus.png",
         "founded": 1897,
+        "budget": 120000000,
         "stadium": "Allianz Stadium",
         "capacity": 41507,
+        "attendance": "40000",
+        "ticketPrice": 110,
+        "stadiumPic": "https://i.ibb.co/bdmtmqt/allianz-stadium.jpg",
         "players": [
             {
                 "name": "Wojciech Szczesny",
                 "photo": "https://i.ibb.co/z2srP47/wojciech-szczesny.jpg",
                 "age": 28,
                 "height": 196,
-                "position": "Goalkeeper"
+                "position": "Goalkeeper",
+                "price": 30000000
             },
             {
                 "name": "Mattia Perin",
                 "photo": "https://i.ibb.co/3mf7bQ3/mattia-perin.jpg",
                 "age": 26,
                 "height": 188,
-                "position": "Goalkeeper"
+                "position": "Goalkeeper",
+                "price": 15000000
             },
             {
                 "name": "Carlo Pinsoglio",
                 "photo": "https://i.ibb.co/Fz8pvBr/carlo-pinsoglio.jpg",
                 "age": 28,
                 "height": 194,
-                "position": "Goalkeeper"
+                "position": "Goalkeeper",
+                "price": 1000000
             },
             {
                 "name": "Leonardo Bonucci",
                 "photo": "https://i.ibb.co/Wzp4vR9/leonardo-bonucci.jpg",
                 "age": 31,
                 "height": 190,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 35000000
             },
             {
                 "name": "Daniele Rugani",
                 "photo": "https://i.ibb.co/f19W03q/daniele-rugani.jpg",
                 "age": 24,
                 "height": 190,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 22000000
             },
             {
                 "name": "Medhi Benatia",
                 "photo": "https://i.ibb.co/N2X6G2p/medhi-benatia.jpg",
                 "age": 31,
                 "height": 190,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 15000000
             },
             {
                 "name": "Giorgio Chiellini",
                 "photo": "https://i.ibb.co/WVmM0DZ/giorgio-chiellini.jpg",
                 "age": 34,
                 "height": 187,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 10000000
             },
             {
                 "name": "Andrea Barzagli",
                 "photo": "https://i.ibb.co/wsLfJC5/andrea-barzagli.jpg",
                 "age": 37,
                 "height": 187,
-                "position": "Centre-Back"
+                "position": "Centre-Back",
+                "price": 1000000
             },
             {
                 "name": "Alex Sandro",
                 "photo": "https://i.ibb.co/c1Vvp4k/alex-sandro.jpg",
                 "age": 27,
                 "height": 181,
-                "position": "Left-Back"
+                "position": "Left-Back",
+                "price": 50000000
             },
             {
                 "name": "Leonardo Spinazzola",
                 "photo": "https://i.ibb.co/xLDwZHq/Leonardo-Spinazzola.jpg",
                 "age": 25,
                 "height": 186,
-                "position": "Left-Back"
+                "position": "Left-Back",
+                "price": 12000000
             },
             {
                 "name": "Joao Cancelo",
                 "photo": "https://i.ibb.co/jT12QTm/joao-cancelo.jpg",
                 "age": 24,
                 "height": 182,
-                "position": "Right-Back"
+                "position": "Right-Back",
+                "price": 55000000
             },
             {
                 "name": "Mattia De Sciglio",
                 "photo": "https://i.ibb.co/6vVxjv4/de-sciglio.jpg",
                 "age": 26,
                 "height": 183,
-                "position": "Right-Back"
+                "position": "Right-Back",
+                "price": 14000000
             },
             {
                 "name": "Emre Can",
                 "photo": "https://i.ibb.co/yFS3RG3/emre-can.jpg",
                 "age": 25,
                 "height": 186,
-                "position": "Defensive Midfield"
+                "position": "Defensive Midfield",
+                "price": 30000000
             },
             {
                 "name": "Miralem Pjanic",
                 "photo": "https://i.ibb.co/DgP3w0y/miralem-pjanic.jpg",
                 "age": 28,
                 "height": 180,
-                "position": "Central Midfield"
+                "position": "Central Midfield",
+                "price": 70000000
             },
             {
                 "name": "Rodrigo Bentancur",
                 "photo": "https://i.ibb.co/jD4NFpS/rodrigo-bentancur.jpg",
                 "age": 21,
                 "height": 187,
-                "position": "Central Midfield"
+                "position": "Central Midfield",
+                "price": 35000000
             },
             {
                 "name": "Blaise Matuidi",
                 "photo": "https://i.ibb.co/m8p4KCH/blaise-matuidi.jpg",
                 "age": 31,
                 "height": 180,
-                "position": "Central Midfield"
+                "position": "Central Midfield",
+                "price": 30000000
             },
             {
                 "name": "Sami Khedira",
                 "photo": "https://i.ibb.co/YQjbdTQ/sami-khedira.jpg",
                 "age": 31,
                 "height": 189,
-                "position": "Central Midfield"
+                "position": "Central Midfield",
+                "price": 20000000
             },
             {
                 "name": "Cristiano Ronaldo",
                 "photo": "https://i.ibb.co/0ByGV1H/cristiano-ronaldo.jpg",
                 "age": 33,
                 "height": 187,
-                "position": "Left Winger"
+                "position": "Left Winger",
+                "price": 100000000
             },
             {
                 "name": "Douglas Costa",
                 "photo": "https://i.ibb.co/3SzDQ70/douglas-costa.jpgg",
                 "age": 28,
                 "height": 172,
-                "position": "Right Winger"
+                "position": "Right Winger",
+                "price": 45000000
             },
             {
                 "name": "Federico Bernardeschi",
                 "photo": "https://i.ibb.co/0XC1q5w/federico-bernardeschi.jpg",
                 "age": 24,
                 "height": 183,
-                "position": "Right Winger"
+                "position": "Right Winger",
+                "price": 45000000
             },
             {
                 "name": "Juan Cuadrado",
                 "photo": "https://i.ibb.co/Y8xtZ6b/juan-cuadrado.jpg",
                 "age": 30,
                 "height": 179,
-                "position": "Right Winger"
+                "position": "Right Winger",
+                "price": 25000000
             },
             {
                 "name": "Paulo Dybala",
                 "photo": "https://i.ibb.co/ZGMyjPr/paulo-dybala.jpg",
                 "age": 25,
                 "height": 177,
-                "position": "Centre Forward"
+                "position": "Centre Forward",
+                "price": 110000000
             },
             {
                 "name": "Mario Mandzukic",
                 "photo": "https://i.ibb.co/B6P9hZf/mario-mandzukic.jpg",
                 "age": 32,
                 "height": 190,
-                "position": "Centre Forward"
+                "position": "Centre Forward",
+                "price": 25000000
             },
             {
                 "name": "Moise Kean",
                 "photo": "https://i.ibb.co/CHcGNSk/moise-kean.jpg",
                 "age": 18,
                 "height": 183,
-                "position": "Centre Forward"
+                "position": "Centre Forward",
+                "price": 15000000
             }
         ]
     }

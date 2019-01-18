@@ -4,9 +4,11 @@ angular.module('chooseTeamService', [])
     .service('chooseTeamService', [
         function() {
             this.myTeam = [];
+            this.isTeamChosen = false;
 
             this.setMyTeam = function(club) {
                 this.myTeam = club;
+                this.isTeamChosen = true;
             }
 
             this.getMyTeam = function() {

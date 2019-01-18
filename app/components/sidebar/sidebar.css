@@ -21,3 +21,11 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+.img-stadium {
+    width: 100%;
+}
+
+.player-row {
+    margin-bottom: 100px;
+}

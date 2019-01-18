@@ -14,5 +14,14 @@ angular.module('myApp.myTeam', ['ngRoute'])
     'chooseTeamService',
     function($scope, chooseTeamService) {
 		$scope.myClub = chooseTeamService.getMyTeam();
+
+		$scope.isTeamChosen = chooseTeamService.isTeamChosen;
+
+		$scope.checkedPlayer = "";
+
+		$scope.test = function(player) {
+			$scope.checkedPlayer = player;
+			console.log($scope.checkedPlayer);
+		}
     }
 ])

@@ -1,3 +1,4 @@
+
 <aside class="sidebar">
     <ul ng-repeat="club in clubs">
       <li>
@@ -14,40 +15,73 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col col-lg-2">
-			<img src="{{  clubInfo.logo  }}" alt="{{ clubInfo.clubName }}">
+		<div class="col col-lg-6">
+			<div class="row">
+				<div class="col col-lg-4">
+					<img src="{{  clubInfo.logo  }}" alt="{{ clubInfo.clubName }}">
+				</div>
+				<div class="col col-lg-8">
+					<table class="table">
+						<tr>
+							<td class="title">Founded: </td>
+							<td class="text">{{ clubInfo.founded }}</td>
+						</tr>
+						<tr>
+							<td class="title">Country:</td>
+							<td class="text">{{ clubInfo.country }}</td>
+						</tr>
+						<tr>
+							<td class="title">Budget: </td>
+							<td class="text">{{ clubInfo.budget | currency:"€":0 }}</td>
+						</tr> 
+						<tr>
+							<td class="title">Capacity: </td>
+							<td class="text">{{ clubInfo.capacity }}</td>
+						</tr>     
+					</table>		
+				</div>
+			</div>	
 		</div>
 
-		<div class="col col-lg-4">
-			<table class="table">
-				<tr>
-					<td class="title">Founded: </td>
-					<td class="text">{{ clubInfo.founded }}</td>
-				</tr>
-				<tr>
-					<td class="title">Country:</td>
-					<td class="text">{{ clubInfo.country }}</td>
-				</tr>
-				<tr>
-					<td class="title">Stadium: </td>
-					<td class="text">{{ clubInfo.stadium }}</td>
-				</tr> 
-				<tr>
-					<td class="title">Capacity: </td>
-					<td class="text">{{ clubInfo.capacity }}</td>
-				</tr>     
-			</table>		
+		<div class="col col-lg-6">
+			<div class="row">
+				<div class="col col-lg-6">
+					<img class="img-stadium" src="{{  clubInfo.stadiumPic  }}" alt="{{ clubInfo.stadium }}">
+				</div>
+				<div class="col col-lg-6">
+					<table class="table">
+						<tr>
+							<td class="title">Stadium: </td>
+							<td class="text">{{ clubInfo.stadium }}</td>
+						</tr> 
+						<tr>
+							<td class="title">Capacity: </td>
+							<td class="text">{{ clubInfo.capacity }}</td>
+						</tr>
+						<tr>
+							<td class="title">Attendance: </td>
+							<td class="text">{{ clubInfo.attendance }}</td>
+						</tr>
+						<tr>
+							<td class="title">Ticket Price:</td>
+							<td class="text">{{ clubInfo.ticketPrice }}</td>
+						</tr>     
+					</table>		
+				</div>
+			</div>	
 		</div>
 	</div>
 
 	<div class="row">
-			<div class="col col-lg-3" ng-repeat="player in clubInfo.players">
-				<div class="row">
-					<div class="col col-lg-12">
-						<img src="{{  player.photo  }}" alt="{{ player.name }}" ng-click="addPlayer(player)">
-					</div>
+		<div class="col col-lg-3 player-row" ng-repeat="player in clubInfo.players">
+			<div class="row">
+				<div class="col col-lg-12">
+					<img src="{{  player.photo  }}" alt="{{ player.name }}">
 				</div>
-				<table class="table table-hover">
+			</div>
+			<button class="btn btn-primary" ng-click="showDetails()">View details</button>
+			<div class="container" ng-if="detailsShown">
+				<table class="table table-hover" ng-if="detailsShown">
 					<tr>
 						<td>Name:</td>
 						<td class="text"><strong>{{ player.name | shortenFirstName }}</strong></td>
@@ -64,12 +98,16 @@
 						<td class="title">Position:</td>
 						<td class="text">{{ player.position }}</td>
 					</tr>
-				</table>	
+					<tr>
+						<td class="title">Value:</td>
+						<td class="text">{{ player.price | currency:"€":0 }}</td>
+					</tr>
+				</table>
+				<button class="btn btn-success" ng-click="addPlayer(player)">Buy</button>
 			</div>
+		</div>
 	</div>
 
 	<button class="btn btn-success" ng-click="takeClub(clubInfo)">TAKE THIS CLUB</button>
 
 </div>
-
-

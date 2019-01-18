@@ -8,9 +8,12 @@ angular.module('myApp', [
   'myApp.version',
   'myApp.sidebar',
   'myApp.myTeam',
+  'myApp.controlPanel',
+  'myApp.navbar',
   'requestDataService',
   'showPlayersService',
-  'chooseTeamService'
+  'chooseTeamService',
+  'transferInService'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

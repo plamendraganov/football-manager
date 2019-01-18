@@ -4,8 +4,12 @@
         "country": "Italy",
         "logo": "https://i.ibb.co/R4FjpT5/juventus.png",
         "founded": 1897,
+        "budget": 120000000,
         "stadium": "Allianz Stadium",
         "capacity": 41507,
+        "attendance": "40000",
+        "ticketPrice": 110,
+        "stadiumPic": "https://i.ibb.co/bdmtmqt/allianz-stadium.jpg",
         "players": [
             {
                 "name": "Wojciech Szczesny",
