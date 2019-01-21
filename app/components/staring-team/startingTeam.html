@@ -1,8 +1,8 @@
-<div class="wrapper">
-    <div ng-if="!isTeamChosen">
-        <h4>You still did not choose your team!</h4>
-    </div>
-    <div class="container" ng-if="isTeamChosen">
+<div class="container">
+    <h2>Select 11 players for the next match</h2>
+</div>
+
+<div class="container">
         <div class="row">
             <div class="col col-lg-12">
                 <h2>{{ myClub.clubName }}</h2>
@@ -64,10 +64,8 @@
                 </div>	
             </div>
         </div>
-        
-        <button class="btn btn-info" ng-if="!arePlayersShown" ng-click="showPlayers()">Show Players</button>
-        
-        <div class="row" ng-if="arePlayersShown">
+    
+        <div class="row">
             <div class="col col-lg-3" ng-repeat="player in myClub.players">
                 <div class="row">
                     <div class="col col-lg-12">
@@ -99,4 +97,3 @@
             </div>
         </div>
     </div>
-</div>

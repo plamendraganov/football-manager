@@ -1,0 +1,10 @@
+<div class="container teams">
+    <h2>Choose Your Team</h2>
+    <div class="row">
+        <div class="col col-lg-1" ng-repeat="club in clubs">
+            <a href="#!/team" ng-click="takeClub(club)">
+                <img src="{{ club.logo }}" alt="{{ club.clubName }}">
+            </a>
+        </div>
+    </div>
+</div>

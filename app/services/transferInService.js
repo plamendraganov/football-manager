@@ -5,8 +5,7 @@ angular.module('transferInService', [])
         function() {
             this.transferIn = 0;
 
-            this.setTransferIn = function(player) {
-                var price = player.price;
+            this.setTransferIn = function(price) {
                 this.transferIn += price;
             }
 

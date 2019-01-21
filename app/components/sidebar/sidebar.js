@@ -38,15 +38,9 @@ angular.module('myApp.sidebar', ['ngRoute'])
             $scope.isClubSelected = true;
         }
 
-        $scope.addPlayer = function(player) {
-            chooseTeamService.addToMyTeam(player);
-            var test = chooseTeamService.getMyTeam();
-            
-            transferInService.setTransferIn(player);
-        }
-
-        $scope.takeClub = function(club) {
-            chooseTeamService.setMyTeam(club);
+        $scope.buyPlayer = function(player) {
+            chooseTeamService.addToMyTeam(player);         
+            transferInService.setTransferIn(player.price);
         }
 
         $scope.showDetails = function() {

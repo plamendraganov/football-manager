@@ -13,9 +13,12 @@ angular.module('myApp.controlPanel', ['ngRoute'])
     '$scope',
     'chooseTeamService',
     'transferInService',
-    function($scope, chooseTeamService, transferInService) {
+    'transferOutService',
+    function($scope, chooseTeamService, transferInService, transferOutService) {
         $scope.myTeam = chooseTeamService.getMyTeam();
         $scope.startBudget = $scope.myTeam.budget | 0;
         $scope.transferIn = transferInService.getTransferIn();
+        $scope.transferOut = transferOutService.getTransferOut();
+        $scope.balance = ($scope.startBudget + $scope.transferOut) - $scope.transferIn;
     }
 ])

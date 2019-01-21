@@ -1,4 +1,4 @@
-
+<h2 class="buying-players" ng-if="!isClubSelected">Select a team to buy players from</h2>
 <aside class="sidebar">
     <ul ng-repeat="club in clubs">
       <li>
@@ -64,7 +64,7 @@
 						</tr>
 						<tr>
 							<td class="title">Ticket Price:</td>
-							<td class="text">{{ clubInfo.ticketPrice }}</td>
+							<td class="text">{{ clubInfo.ticketPrice | currency:"€":0 }}</td>
 						</tr>     
 					</table>		
 				</div>
@@ -79,13 +79,10 @@
 					<img src="{{  player.photo  }}" alt="{{ player.name }}">
 				</div>
 			</div>
+			<h6>{{ player.name | shortenFirstName }}</h6>
 			<button class="btn btn-primary" ng-click="showDetails()">View details</button>
 			<div class="container" ng-if="detailsShown">
 				<table class="table table-hover" ng-if="detailsShown">
-					<tr>
-						<td>Name:</td>
-						<td class="text"><strong>{{ player.name | shortenFirstName }}</strong></td>
-					</tr>
 					<tr>
 						<td class="title">Age: </td>
 						<td class="text">{{ player.age }}</td>
@@ -103,11 +100,8 @@
 						<td class="text">{{ player.price | currency:"€":0 }}</td>
 					</tr>
 				</table>
-				<button class="btn btn-success" ng-click="addPlayer(player)">Buy</button>
+				<button class="btn btn-success" ng-click="buyPlayer(player)">Buy this player</button>
 			</div>
 		</div>
 	</div>
-
-	<button class="btn btn-success" ng-click="takeClub(clubInfo)">TAKE THIS CLUB</button>
-
 </div>

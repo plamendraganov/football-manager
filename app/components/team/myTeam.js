@@ -11,8 +11,9 @@ angular.module('myApp.myTeam', ['ngRoute'])
 
 .controller('MyTeamController', [
     '$scope',
-    'chooseTeamService',
-    function($scope, chooseTeamService) {
+	'chooseTeamService',
+	'transferOutService',
+    function($scope, chooseTeamService, transferOutService) {
 		$scope.myClub = chooseTeamService.getMyTeam();
 
 		$scope.isTeamChosen = chooseTeamService.isTeamChosen;
@@ -22,6 +23,22 @@ angular.module('myApp.myTeam', ['ngRoute'])
 		$scope.test = function(player) {
 			$scope.checkedPlayer = player;
 			console.log($scope.checkedPlayer);
+		}
+
+		$scope.arePlayersShown = false;
+
+		$scope.showPlayers = function() {
+			$scope.arePlayersShown = true;
+		}
+
+		$scope.sellPlayer = function(player) {
+			var playerIndex = $scope.myClub.players.indexOf(player);
+
+			if (playerIndex !== -1) {
+				transferOutService.setTransferOut(player.price);
+				$scope.myClub.players.splice(playerIndex, 1);
+			}
+			return false;
 		}
     }
 ])
