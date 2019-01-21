@@ -57,7 +57,7 @@
                             </tr>
                             <tr>
                                 <td class="title">Ticket Price:</td>
-                                <td class="text">{{ myClub.ticketPrice }}</td>
+                                <td class="text">{{ myClub.ticketPrice | currency:"€":0 }}</td>
                             </tr>     
                         </table>		
                     </div>
@@ -66,7 +66,7 @@
         </div>
         
         <button class="btn btn-info" ng-if="!arePlayersShown" ng-click="showPlayers()">Show Players</button>
-        
+
         <div class="row" ng-if="arePlayersShown">
             <div class="col col-lg-3" ng-repeat="player in myClub.players">
                 <div class="row">
