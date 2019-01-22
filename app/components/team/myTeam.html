@@ -64,38 +64,52 @@
                 </div>	
             </div>
         </div>
-        
-        <button class="btn btn-info" ng-if="!arePlayersShown" ng-click="showPlayers()">Show Players</button>
 
-        <div class="row" ng-if="arePlayersShown">
-            <div class="col col-lg-3" ng-repeat="player in myClub.players">
+        <div class="row">
+            <div class="col col-lg-6">
+                <a href="#!/buying">
+                    <img width="30%" src="https://www.wpclipart.com/signs_symbol/arrows/curved_arrow/arrow_curved_green_right.png" alt="Buy">
+                </a>
+                <h5>Buy Players</h5>
+            </div>
+            <div class="col col-lg-6">
+                <a href="#!/selling">
+                    <img width="30%" src="https://www.wpclipart.com/signs_symbol/arrows/curved_arrow/arrow_curved_red_right.png" alt="Sell">
+                </a>
+                <h5>Sell Players</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-3 player-row" ng-repeat="player in myClub.players">
                 <div class="row">
                     <div class="col col-lg-12">
                         <img src="{{  player.photo  }}" alt="{{ player.name }}" ng-click="showPlayerDetails(player)">
                     </div>
                 </div>
-                <table class="table table-hover">
-                    <tr>
-                        <td>Name:</td>
-                        <td class="text"><strong>{{ player.name | shortenFirstName }}</strong></td>
-                    </tr>
-                    <tr>
-                        <td class="title">Age: </td>
-                        <td class="text">{{ player.age }}</td>
-                    </tr> 
-                    <tr>
-                        <td class="title">Height: </td>
-                        <td class="text">{{ player.height }}</td>
-                    </tr>     
-                    <tr>
-                        <td class="title">Position:</td>
-                        <td class="text">{{ player.position }}</td>
-                    </tr>
-                </table>
-    
-                <button class="btn btn-success" ng-click="sellPlayer(player)">Sell this player</button>
-    
-                <input type="checkbox" value="player" ng-model="checkedPlayer" ng-click="test(player)">Sideline
+                <h6>{{ player.name | shortenFirstName }}</h6>
+			    <button class="btn btn-primary" ng-click="showDetails()">View details</button>
+
+                <div class="container" ng-if="detailsShown">
+                    <table class="table table-hover">
+                        <tr>
+                            <td class="title">Age: </td>
+                            <td class="text">{{ player.age }}</td>
+                        </tr> 
+                        <tr>
+                            <td class="title">Height: </td>
+                            <td class="text">{{ player.height }}</td>
+                        </tr>     
+                        <tr>
+                            <td class="title">Position:</td>
+                            <td class="text">{{ player.position }}</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Value:</td>
+                            <td class="text">{{ player.price | currency:"€":0 }}</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

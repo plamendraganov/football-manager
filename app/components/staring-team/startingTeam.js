@@ -67,7 +67,14 @@ angular.module('myApp.startingTeam', ['ngRoute'])
 		}
 
 		$scope.chooseDefender = function(defender) {
+			var defenderIndex = $scope.defenders.indexOf(defender);
+			
 			$scope.selectedDefenders.push(defender);
+
+			if (defenderIndex !== -1) {
+				$scope.defenders.splice(defenderIndex, 1);
+			}
+
 			if ($scope.selectedDefenders.length === $scope.defendersCount) {
 				$scope.lineUps = $scope.lineUps.concat($scope.selectedDefenders);
 				$scope.areDefendersChosen = true;
@@ -75,7 +82,14 @@ angular.module('myApp.startingTeam', ['ngRoute'])
 		}
 
 		$scope.chooseMidfielder = function(midfielder) {
+			var midfielderIndex = $scope.midfielders.indexOf(midfielder);
+			
 			$scope.selectedMidfielders.push(midfielder);
+
+			if (midfielderIndex !== -1) {
+				$scope.midfielders.splice(midfielderIndex, 1);
+			}
+
 			if ($scope.selectedMidfielders.length === $scope.midfieldersCount) {
 				$scope.lineUps = $scope.lineUps.concat($scope.selectedMidfielders);
 				$scope.areMidfieldersChosen = true;
@@ -83,7 +97,14 @@ angular.module('myApp.startingTeam', ['ngRoute'])
 		}
 
 		$scope.chooseStriker = function(striker) {
+			var strikerIndex = $scope.strikers.indexOf(striker);
+			
 			$scope.selectedStrikers.push(striker);
+
+			if (strikerIndex !== -1) {
+				$scope.strikers.splice(strikerIndex, 1);
+			}
+
 			if ($scope.selectedStrikers.length === $scope.strikersCount) {
 				$scope.lineUps = $scope.lineUps.concat($scope.selectedStrikers);
 				$scope.areStrikersChosen = true;

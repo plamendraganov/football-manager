@@ -13,6 +13,8 @@ angular.module('myApp', [
   'myApp.controlPanel',
   'myApp.navbar',
   'myApp.startingTeam',
+  'myApp.sellingPlayers',
+  'myApp.buyingPlayers',
   'requestDataService',
   'showPlayersService',
   'chooseTeamService',
@@ -22,5 +24,5 @@ angular.module('myApp', [
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/teams'});
+  $routeProvider.otherwise({redirectTo: '/home'});
 }]);

@@ -1,0 +1,58 @@
+<div class="wrapper buying-players">
+    <h2 class="info-title" ng-if="!isClubSelected">Select a team to buy players from</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-1" ng-repeat="club in clubs">
+                <a href="#!/buying" ng-click="selectClub(club)">
+                    <img src="{{ club.logo }}" alt="{{ club.clubName }}" class="club-logo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="container" ng-if="isClubSelected">
+        <div class="row">
+            <div class="col col-lg-12">
+                <h2>{{ clubInfo.clubName }}</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-3 player-row" ng-repeat="player in clubInfo.players">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <img src="{{  player.photo  }}" alt="{{ player.name }}">
+                    </div>
+                </div>
+                <h6>{{ player.name | shortenFirstName }}</h6>
+                <button class="btn btn-primary" ng-click="showDetails()">View details</button>
+                <div class="container" ng-if="detailsShown">
+                    <table class="table table-hover" ng-if="detailsShown">
+                        <tr>
+                            <td class="title">Age: </td>
+                            <td class="text">{{ player.age }}</td>
+                        </tr> 
+                        <tr>
+                            <td class="title">Height: </td>
+                            <td class="text">{{ player.height }}</td>
+                        </tr>     
+                        <tr>
+                            <td class="title">Position:</td>
+                            <td class="text">{{ player.position }}</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Value:</td>
+                            <td class="text">{{ player.price | currency:"€":0 }}</td>
+                        </tr>
+                    </table>
+                    <button class="btn btn-success" ng-click="buyPlayer(player)">Buy this player</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

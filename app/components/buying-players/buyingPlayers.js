@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('myApp.sidebar', ['ngRoute'])
+angular.module('myApp.buyingPlayers', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/sidebar', {
-    templateUrl: 'components/sidebar/sidebar.html',
-    controller: 'SidebarController'
+  $routeProvider.when('/buying', {
+    templateUrl: 'components/buying-players/buyingPlayers.html',
+    controller: 'BuyingPlayersController'
   });
 }])
 
-.controller('SidebarController', [
+.controller('BuyingPlayersController', [
     '$scope',
     'getClubDataService',
     'chooseTeamService',
@@ -19,6 +19,8 @@ angular.module('myApp.sidebar', ['ngRoute'])
 
         $scope.clubInfo = [];
 
+        $scope.myClub = chooseTeamService.getMyTeam();
+
         $scope.isClubSelected = false;
 
         $scope.myTeamSelected = [];
@@ -27,7 +29,9 @@ angular.module('myApp.sidebar', ['ngRoute'])
 
         getClubDataService.getRepos()
             .then(function(data){
-                $scope.clubs = data;
+                $scope.clubs = data.filter((club) => {
+                    return club.clubName !== $scope.myClub.clubName;
+                });
             })
 
         $scope.selectClub = function(club) {
@@ -68,3 +72,4 @@ angular.module('myApp.sidebar', ['ngRoute'])
             return inputVal;
         }
     });
+

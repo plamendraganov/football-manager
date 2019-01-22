@@ -21,4 +21,4 @@ angular.module('myApp.controlPanel', ['ngRoute'])
         $scope.transferOut = transferOutService.getTransferOut();
         $scope.balance = ($scope.startBudget + $scope.transferOut) - $scope.transferIn;
     }
-])
+]);
