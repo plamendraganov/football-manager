@@ -7,7 +7,7 @@
         "budget": 150000000,
         "stadium": "Camp Nou",
         "capacity": 99354,
-        "attendance": "76000",
+        "attendance": 76000,
         "ticketPrice": 130,
         "stadiumPic": "https://i.ibb.co/YPRgHtk/camp-nou.jpg",
         "players": [
@@ -214,7 +214,7 @@
         "budget": 120000000,
         "stadium": "Allianz Stadium",
         "capacity": 41507,
-        "attendance": "40000",
+        "attendance": 40000,
         "ticketPrice": 110,
         "stadiumPic": "https://i.ibb.co/bdmtmqt/allianz-stadium.jpg",
         "players": [
@@ -409,6 +409,212 @@
                 "height": 183,
                 "position": "Centre-Forward",
                 "price": 15000000
+            }
+        ]
+    },
+    {
+        "clubName": "Ajax",
+        "country": "Netherlands",
+        "logo": "https://i.ibb.co/rsqF8Yt/ajax.png",
+        "founded": 1900,
+        "budget": 40000000,
+        "stadium": "Johan Cruijff Arena",
+        "capacity": 54033,
+        "attendance": 52000,
+        "ticketPrice": 70,
+        "stadiumPic": "https://i.ibb.co/GxdQzNF/Johan-Cruijff-Arena.jpg",
+        "players": [
+            {
+                "name": "Andre Onana",
+                "photo": "https://i.ibb.co/2yWFR1s/andre-onana.jpgg",
+                "age": 22,
+                "height": 192,
+                "position": "Goalkeeper",
+                "price": 28000000
+            },
+            {
+                "name": "Konstantinos Lamprou",
+                "photo": "https://i.ibb.co/dGphWR8/konstantinos-lamprou.jpg",
+                "age": 27,
+                "height": 176,
+                "position": "Goalkeeper",
+                "price": 1000000
+            },
+            {
+                "name": "Dominik Kotarski",
+                "photo": "https://i.ibb.co/s6mLp5F/dominik-kotarski.jpg",
+                "age": 18,
+                "height": 189,
+                "position": "Goalkeeper",
+                "price": 250000
+            },
+            {
+                "name": "Matthijs de Ligt",
+                "photo": "https://i.ibb.co/5GJbhkx/matthijs-de-ligt.jpg",
+                "age": 19,
+                "height": 189,
+                "position": "Centre-Back",
+                "price": 65000000
+            },
+            {
+                "name": "Daley Blind",
+                "photo": "https://i.ibb.co/WpG3BDQ/daley-blind.jpg",
+                "age": 28,
+                "height": 180,
+                "position": "Centre-Back",
+                "price": 18000000
+            },
+            {
+                "name": "Lisandro Magallan",
+                "photo": "https://i.ibb.co/0XJzm96/lisandro-magallan.jpg",
+                "age": 25,
+                "height": 185,
+                "position": "Centre-Back",
+                "price": 6000000
+            },
+            {
+                "name": "Perr Schuurs",
+                "photo": "https://i.ibb.co/5sKz8X5/perr-schuurs.jpg",
+                "age": 19,
+                "height": 191,
+                "position": "Centre-Back",
+                "price": 2000000
+            },
+            {
+                "name": "Nicolas Tagliafico",
+                "photo": "https://i.ibb.co/GvRR1ZL/nicolas-tagliafico.jpg",
+                "age": 26,
+                "height": 172,
+                "position": "Left-Back",
+                "price": 20000000
+            },
+            {
+                "name": "Daley Sinkgraven",
+                "photo": "https://i.ibb.co/Z17NMQz/daley-sinkgraven.jpg",
+                "age": 23,
+                "height": 179,
+                "position": "Left-Back",
+                "price": 2500000
+            },
+            {
+                "name": "Noussair Mazraoui",
+                "photo": "https://i.ibb.co/rZhDyQ4/noussair-mazraoui.jpg",
+                "age": 21,
+                "height": 183,
+                "position": "Right-Back",
+                "price": 12000000
+            },
+            {
+                "name": "Joel Veltman",
+                "photo": "https://i.ibb.co/vDtpzmP/joel-veltman.jpg",
+                "age": 27,
+                "height": 184,
+                "position": "Right-Back",
+                "price": 5000000
+            },
+            {
+                "name": "Rasmus Kristensen",
+                "photo": "https://i.ibb.co/sgZTRC1/rasmus-kristensen.jpg",
+                "age": 21,
+                "height": 187,
+                "position": "Right-Back",
+                "price": 2500000
+            },
+            {
+                "name": "Carel Eiting",
+                "photo": "https://i.ibb.co/WB95TGp/carel-eiting.jpg",
+                "age": 20,
+                "height": 179,
+                "position": "Defensive Midfield",
+                "price": 4000000
+            },
+            {
+                "name": "Lasse Schone",
+                "photo": "https://i.ibb.co/XDz7DM3/lasse-schone.jpg",
+                "age": 32,
+                "height": 177,
+                "position": "Defensive Midfield",
+                "price": 3000000
+            },
+            {
+                "name": "Frenkie de Jong",
+                "photo": "https://i.ibb.co/nMHwz1t/frenkie-de-jong.jpg",
+                "age": 21,
+                "height": 181,
+                "position": "Central Midfield",
+                "price": 60000000
+            },
+            {
+                "name": "Dani de Wit",
+                "photo": "https://i.ibb.co/48vw6Tg/dani-de-wit.jpg",
+                "age": 20,
+                "height": 183,
+                "position": "Central Midfield",
+                "price": 1000000
+            },
+            {
+                "name": "Hakim Ziyech",
+                "photo": "https://i.ibb.co/X4LSR6M/hakim-ziyech.jpg",
+                "age": 25,
+                "height": 180,
+                "position": "Attacking Midfield",
+                "price": 35000000
+            },
+            {
+                "name": "Donny van de Beek",
+                "photo": "https://i.ibb.co/xCVm3jg/donny-van-de-beek.jpg",
+                "age": 21,
+                "height": 184,
+                "position": "Attacking Midfield",
+                "price": 20000000
+            },
+            {
+                "name": "Zakaria Labyad",
+                "photo": "https://i.ibb.co/NTFnThj/zakaria-labyad.jpg",
+                "age": 25,
+                "height": 173,
+                "position": "Attacking Midfield",
+                "price": 6000000
+            },
+            {
+                "name": "Dusan Tadic",
+                "photo": "https://i.ibb.co/1mt3whS/dusan-tadic.jpg",
+                "age": 30,
+                "height": 181,
+                "position": "Left Winger",
+                "price": 18000000
+            },
+            {
+                "name": "Hassane Bande",
+                "photo": "https://i.ibb.co/rf1XYL0/hassane-bande.jpg",
+                "age": 20,
+                "height": 178,
+                "position": "Left Winger",
+                "price": 7500000
+            },
+            {
+                "name": "David Neres",
+                "photo": "https://i.ibb.co/qRbfwH7/david-neres.jpg",
+                "age": 21,
+                "height": 175,
+                "position": "Right Winger",
+                "price": 25000000
+            },
+            {
+                "name": "Kasper Dolberg",
+                "photo": "https://i.ibb.co/Rhrp45c/kasper-dolberg.jpg",
+                "age": 21,
+                "height": 187,
+                "position": "Centre-Forward",
+                "price": 17000000
+            },
+            {
+                "name": "Klaas-Jan Huntelaar",
+                "photo": "https://i.ibb.co/dfSkBxT/klaas-jan-huntelaar.jpg",
+                "age": 35,
+                "height": 186,
+                "position": "Centre-Forward",
+                "price": 1000000
             }
         ]
     }
