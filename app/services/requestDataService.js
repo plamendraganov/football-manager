@@ -8,7 +8,7 @@ angular.module('requestDataService', [])
             function getRepos() {
                 var deferred = $q.defer();
 
-                $http.get('https://api.myjson.com/bins/st42o')
+                $http.get('https://api.myjson.com/bins/e40b8')
                     .then(function(result) {
                         deferred.resolve(result.data);
                     }, function(err) {
@@ -29,7 +29,7 @@ angular.module('requestDataService', [])
             function getRepos() {
                 var deferred = $q.defer();
 
-                $http.get('https://api.myjson.com/bins/jjgks')
+                $http.get('https://api.myjson.com/bins/18ez04')
                     .then(function(result) {
                         deferred.resolve(result.data);
                     }, function(err) {

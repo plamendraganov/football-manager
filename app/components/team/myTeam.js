@@ -37,6 +37,7 @@ angular.module('myApp.myTeam', ['ngRoute'])
 			if (playerIndex !== -1) {
 				transferOutService.setTransferOut(player.price);
 				$scope.myClub.players.splice(playerIndex, 1);
+				chooseTeamService.setMyTeam($scope.myClub);
 			}
 			return false;
 		}

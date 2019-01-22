@@ -25,7 +25,9 @@ angular.module('chooseTeamService', [])
                 this.myMidfielders = this.myTeam.players.filter((player) => {
                         return player.position === 'Defensive Midfield' 
                             || player.position === 'Central Midfield' 
-                            || player.position === 'Attacking Midfield';
+                            || player.position === 'Attacking Midfield'
+                            || player.position === 'Left Winger'
+                            || player.position === 'Right Winger';
                 });
                 this.myStrikers = this.myTeam.players.filter((player) => {
                         return player.position === 'Left Winger' 
@@ -40,6 +42,7 @@ angular.module('chooseTeamService', [])
 
             this.addToMyTeam = function(player) {
                 this.myTeam.players.push(player);
+                this.setMyTeam(this.myTeam);
             }
         }
     ]);

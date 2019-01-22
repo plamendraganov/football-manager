@@ -25,7 +25,7 @@
     },
     {
         "formationName": "4-4-2",
-        "formationPic": "https://i.ibb.co/VB0Scyw/4-4-2.png",
+        "formationPic": "https://i.ibb.co/CQ533Vm/4-4-2.png",
         "attack": 0,
         "defence": 1
     },
@@ -56,6 +56,18 @@
     {
         "formationName": "3-4-3",
         "formationPic": "https://i.ibb.co/Bn9q7zn/3-4-3.png",
+        "attack": 0,
+        "defence": 1
+    },
+    {
+        "formationName": "3-6-1",
+        "formationPic": "https://i.ibb.co/tpyt8gK/3-6-1.png",
+        "attack": 0,
+        "defence": 1
+    },
+    {
+        "formationName": "2-5-3",
+        "formationPic": "https://i.ibb.co/k62Npvd/2-5-3.png",
         "attack": 0,
         "defence": 1
     }

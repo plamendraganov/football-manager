@@ -3,11 +3,12 @@
         <h4>Choose your team's formation</h4>
         <div class="row">
             <div class="col col-lg-3" ng-repeat="formation in formations">
-                <br>
                 <a href="#!/start" ng-click="chooseFormation(formation)">
                     <img width="100%" src="{{ formation.formationPic }}" alt="{{ formation.formationName }}">
                 </a>
-                <br>
+                <div>
+                    <h5>{{ formation.formationName }}</h5>
+                </div>
             </div>
         </div>
     </div>
@@ -53,15 +54,15 @@
 </div>
 
 <div class="container" ng-if="isFormationChosen && isGoalkeeperChosen && !areDefendersChosen">
-    <h4>Choose {{ defenderNumbers }} defenders:</h4>
+    <h4>Choose {{ defendersCount }} defenders:</h4>
     <div class="row">
-        <div class="col col-lg-3" ng-repeat="goalkeeper in goalkeepers">
+        <div class="col col-lg-3" ng-repeat="defender in defenders">
             <div class="row">
                 <div class="col col-lg-12">
-                    <img src="{{  goalkeeper.photo  }}" alt="{{ goalkeeper.name }}">
+                    <img src="{{  defender.photo  }}" alt="{{ defender.name }}">
                 </div>
             </div>
-            <h6>{{ goalkeeper.name | shortenFirstName }}</h6>
+            <h6>{{ defender.name | shortenFirstName }}</h6>
             <div>
                 <button class="btn btn-primary" ng-click="showDetails()">View details</button>
             </div>
@@ -69,24 +70,145 @@
                 <table class="table table-hover" ng-if="detailsShown">
                     <tr>
                         <td class="title">Age: </td>
-                        <td class="text">{{ goalkeeper.age }}</td>
+                        <td class="text">{{ defender.age }}</td>
                     </tr> 
                     <tr>
                         <td class="title">Height: </td>
-                        <td class="text">{{ goalkeeper.height }}</td>
+                        <td class="text">{{ defender.height }}</td>
                     </tr>     
                     <tr>
                         <td class="title">Position:</td>
-                        <td class="text">{{ goalkeeper.position }}</td>
+                        <td class="text">{{ defender.position }}</td>
                     </tr>
                     <tr>
                         <td class="title">Value:</td>
-                        <td class="text">{{ goalkeeper.price | currency:"€":0 }}</td>
+                        <td class="text">{{ defender.price | currency:"€":0 }}</td>
                     </tr>
                 </table>
             </div>
             <div>
-                <a href="#!/start" class="btn btn-primary" ng-click="chooseGoalkeeper(goalkeeper)">Choose this player</a>
+                <a href="#!/start" class="btn btn-primary" ng-click="chooseDefender(defender)">Choose this player</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" ng-if="isFormationChosen && isGoalkeeperChosen && areDefendersChosen && !areMidfieldersChosen">
+    <h4>Choose {{ midfieldersCount }} midfielders:</h4>
+    <div class="row">
+        <div class="col col-lg-3" ng-repeat="midfielder in midfielders">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <img src="{{  midfielder.photo  }}" alt="{{ midfielder.name }}">
+                </div>
+            </div>
+            <h6>{{ midfielder.name | shortenFirstName }}</h6>
+            <div>
+                <button class="btn btn-primary" ng-click="showDetails()">View details</button>
+            </div>
+            <div class="container" ng-if="detailsShown">
+                <table class="table table-hover" ng-if="detailsShown">
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">{{ midfielder.age }}</td>
+                    </tr> 
+                    <tr>
+                        <td class="title">Height: </td>
+                        <td class="text">{{ midfielder.height }}</td>
+                    </tr>     
+                    <tr>
+                        <td class="title">Position:</td>
+                        <td class="text">{{ midfielder.position }}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Value:</td>
+                        <td class="text">{{ midfielder.price | currency:"€":0 }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <a href="#!/start" class="btn btn-primary" ng-click="chooseMidfielder(midfielder)">Choose this player</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" ng-if="isFormationChosen && isGoalkeeperChosen 
+        && areDefendersChosen && areMidfieldersChosen && !areStrikersChosen">
+    <h4>Choose {{ strikersCount }} strikers:</h4>
+    <div class="row">
+        <div class="col col-lg-3" ng-repeat="striker in strikers">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <img src="{{  striker.photo  }}" alt="{{ striker.name }}">
+                </div>
+            </div>
+            <h6>{{ striker.name | shortenFirstName }}</h6>
+            <div>
+                <button class="btn btn-primary" ng-click="showDetails()">View details</button>
+            </div>
+            <div class="container" ng-if="detailsShown">
+                <table class="table table-hover" ng-if="detailsShown">
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">{{ striker.age }}</td>
+                    </tr> 
+                    <tr>
+                        <td class="title">Height: </td>
+                        <td class="text">{{ striker.height }}</td>
+                    </tr>     
+                    <tr>
+                        <td class="title">Position:</td>
+                        <td class="text">{{ striker.position }}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Value:</td>
+                        <td class="text">{{ striker.price | currency:"€":0 }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <a href="#!/start" class="btn btn-primary" ng-click="chooseStriker(striker)">Choose this player</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" ng-if="isFormationChosen && isGoalkeeperChosen 
+        && areDefendersChosen && areMidfieldersChosen && areStrikersChosen">
+    <div class="row">
+        <div class="col col-lg-3" ng-repeat="player in lineUps">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <img src="{{  player.photo  }}" alt="{{ player.name }}">
+                </div>
+            </div>
+            <h6>{{ player.name | shortenFirstName }}</h6>
+            <div>
+                <button class="btn btn-primary" ng-click="showDetails()">View details</button>
+            </div>
+            <div class="container" ng-if="detailsShown">
+                <table class="table table-hover" ng-if="detailsShown">
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">{{ player.age }}</td>
+                    </tr> 
+                    <tr>
+                        <td class="title">Height: </td>
+                        <td class="text">{{ player.height }}</td>
+                    </tr>     
+                    <tr>
+                        <td class="title">Position:</td>
+                        <td class="text">{{ player.position }}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Value:</td>
+                        <td class="text">{{ player.price | currency:"€":0 }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <a href="#!/start" class="btn btn-primary" ng-click="chooseStriker(player)">Choose this player</a>
             </div>
         </div>
     </div>

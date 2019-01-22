@@ -201,7 +201,7 @@
                 "photo": "https://i.ibb.co/02HDbZh/luis-suarez.jpg",
                 "age": 31,
                 "height": 182,
-                "position": "Centre Forward",
+                "position": "Centre-Forward",
                 "price": 60000000
             }
         ]
@@ -391,7 +391,7 @@
                 "photo": "https://i.ibb.co/ZGMyjPr/paulo-dybala.jpg",
                 "age": 25,
                 "height": 177,
-                "position": "Centre Forward",
+                "position": "Centre-Forward",
                 "price": 110000000
             },
             {
@@ -399,7 +399,7 @@
                 "photo": "https://i.ibb.co/B6P9hZf/mario-mandzukic.jpg",
                 "age": 32,
                 "height": 190,
-                "position": "Centre Forward",
+                "position": "Centre-Forward",
                 "price": 25000000
             },
             {
@@ -407,7 +407,7 @@
                 "photo": "https://i.ibb.co/CHcGNSk/moise-kean.jpg",
                 "age": 18,
                 "height": 183,
-                "position": "Centre Forward",
+                "position": "Centre-Forward",
                 "price": 15000000
             }
         ]
